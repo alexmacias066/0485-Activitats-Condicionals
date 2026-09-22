@@ -16,7 +16,7 @@ public class PositiuNegatiuZero {
         else{
             if(numero == 0)
             {
-                System.out.println("El número és 0");
+                System.out.println("El número és zero");
             }
             else{
                 if(numero < 0)
