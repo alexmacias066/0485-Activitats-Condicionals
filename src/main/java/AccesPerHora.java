@@ -5,5 +5,7 @@
 public class AccesPerHora {
     public static void main(String[] args) {
         // TODO: mostra "Pots accedir" únicament si ja han passat les 8 del matí
+
+        
     }
 }
