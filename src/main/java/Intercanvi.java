@@ -23,7 +23,5 @@ public class Intercanvi {
 
         System.out.println("El primer número és: " + a);
         System.out.println("El segon número és: " + b);
-
-
     }
 }

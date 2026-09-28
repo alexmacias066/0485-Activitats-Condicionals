@@ -14,6 +14,6 @@ public class Temperatura {
         Double temperatureF = teclat.nextDouble();
         Double temperatureC = (((temperatureF - 32) * 5) / 9);
         
-        System.out.printf("La temperatura en celsius és: %.2f" + temperatureC);
+        System.out.printf("La temperatura en celsius és: %.2f", temperatureC);
     }
 }
