@@ -18,7 +18,7 @@ public class EntreU10Parell {
                 System.out.println("El número és par.");
             }
             else{
-                System.out.println("El número es impar");
+                System.out.println("El número es senar");
             }
         }
         else{
@@ -28,7 +28,7 @@ public class EntreU10Parell {
                 System.out.println("El número és par.");
             }
             else{
-                System.out.println("El número es impar");
+                System.out.println("El número es senar");
             }
         }
     }
