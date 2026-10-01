@@ -20,7 +20,7 @@ public class PreuEntradaCinema {
         boolean CapDeSetmana = (CapSetmana == 'C' || CapSetmana=='c');
         boolean CarnetJ = (CarnetJove == 'S' || CarnetJove == 's');
 
-        double PreuCapSetmana = 0.10;
+        double PreuCapSetmana = 0.10; 
         double PreuCarnetJove = 0.15;
 
         if(!CapDeSetmana && !CarnetJ)

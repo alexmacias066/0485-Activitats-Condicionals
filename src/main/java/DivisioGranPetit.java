@@ -12,23 +12,34 @@ public class DivisioGranPetit {
 
         Scanner teclat = new Scanner(System.in);
         System.out.println("Introdueix 2 números diferents: ");
-        double nuemro1 = teclat.nextDouble();
-        double numero2 = teclat.nextDouble();
+        int nuemro1 = teclat.nextInt();
+        int numero2 = teclat.nextInt();
+       
+        int gran, petit;
+
         if(nuemro1 == numero2)
         {
             System.out.println("Els números han de ser diferents");
         }
         else{
-            double gran = Math.max(nuemro1, numero2);
-            double petit = Math.min(nuemro1, numero2);
-            if(petit == 0 )
+            if(nuemro1>numero2)
             {
-                System.out.println("El divisor no pot ser 0");
+                gran = nuemro1;
+                petit = numero2;
             }
             else
             {
-                double resultat = gran/petit;
-                System.out.println("El resultat és: " + resultat);
+                gran = numero2;
+                petit = nuemro1;
+            }
+            if(petit != 0)
+            {
+                int resultat = gran/petit;
+                System.out.println("El resultat és: "+ resultat);
+            }
+            else
+            {
+                System.out.println("El divisor no pot ser 0");
             }
         }
     }
