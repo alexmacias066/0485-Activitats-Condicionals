@@ -8,57 +8,58 @@ public class MonedesMinimesCondicional {
         //   Mostra la quantitat mínima de monedes de 1, 2, 5, 10, 20, 50, 100 i 200 cèntims
         //   Només mostra les línies amb quantitat > 0
         Scanner teclat = new Scanner(System.in);
+        
         System.out.println("Introdueix una quantiat de cèntims: ");
         int centims = teclat.nextInt();
        
         if (centims < 0) {
             System.out.println("La quantitat ha de ser igual o major que 0.");
         } else {
-            int m200 = centims / 200;
+            int monedes_200 = centims / 200;
             centims = centims % 200;
-            if (m200 > 0) {
-                System.out.println(m200 + " moneda/es de 200 cèntims");
+            if (monedes_200 > 0) {
+                System.out.println(monedes_200 + " moneda/es de 200 cèntims");
             }
 
-            int m100 = centims / 100;
+            int monedes_100 = centims / 100;
             centims = centims % 100;
-            if (m100 > 0) {
-                System.out.println(m100 + " moneda/es de 100 cèntims");
+            if (monedes_100 > 0) {
+                System.out.println(monedes_100 + " moneda/es de 100 cèntims");
             }
 
-            int m50 = centims / 50;
+            int monedes_50 = centims / 50;
             centims = centims % 50;
-            if (m50 > 0) {
-                System.out.println(m50 + " moneda/es de 50 cèntims");
+            if (monedes_50 > 0) {
+                System.out.println(monedes_50 + " moneda/es de 50 cèntims");
             }
 
-            int m20 = centims / 20;
+            int monedes_20 = centims / 20;
             centims = centims % 20;
-            if (m20 > 0) {
-                System.out.println(m20 + " moneda/es de 20 cèntims");
+            if (monedes_20 > 0) {
+                System.out.println(monedes_20 + " moneda/es de 20 cèntims");
             }
 
-            int m10 = centims / 10;
+            int monedes_10 = centims / 10;
             centims = centims % 10;
-            if (m10 > 0) {
-                System.out.println(m10 + " moneda/es de 10 cèntims");
+            if (monedes_10 > 0) {
+                System.out.println(monedes_10 + " moneda/es de 10 cèntims");
             }
 
-            int m5 = centims / 5;
+            int monedes_5 = centims / 5;
             centims = centims % 5;
-            if (m5 > 0) {
-                System.out.println(m5 + " moneda/es de 5 cèntims");
+            if (monedes_5 > 0) {
+                System.out.println(monedes_5 + " moneda/es de 5 cèntims");
             }
 
-            int m2 = centims / 2;
+            int monedes_2 = centims / 2;
             centims = centims % 2;
-            if (m2 > 0) {
-                System.out.println(m2 + " moneda/es de 2 cèntims");
+            if (monedes_2 > 0) {
+                System.out.println(monedes_2 + " moneda/es de 2 cèntims");
             }
 
-            int m1 = centims;
-            if (m1 > 0) {
-                System.out.println(m1 + " moneda/es de 1 cèntim");
+            int monedes_1 = centims;
+            if (monedes_1 > 0) {
+                System.out.println(monedes_1 + " moneda/es de 1 cèntim");
             }
         }
     }
