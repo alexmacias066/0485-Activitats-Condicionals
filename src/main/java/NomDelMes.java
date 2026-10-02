@@ -47,7 +47,7 @@ public class NomDelMes {
                 System.out.println("Desembre");
                 break;
             default:
-                System.out.println("Número no esperat, introdueix un número vàlid.");;
+                System.out.println("Número no vàlid.");;
         }
 
     }

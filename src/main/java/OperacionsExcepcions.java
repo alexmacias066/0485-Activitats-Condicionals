@@ -8,56 +8,33 @@ public class OperacionsExcepcions {
         // TODO: llegeix 2 números enters i mostra suma, resta, multiplicació i divisió
         //   Controla amb try/catch que l'usuari introdueixi números vàlids
         //   Controla que el segon operand no sigui 0 abans de dividir
+    try{
         Scanner teclat = new Scanner(System.in);
        
-        System.out.println("Introdueix dos números enters: ");
+        System.out.println("Introdueix el primer número: ");
         int numero_1 = teclat.nextInt();
+        System.out.println("Introdueix el segon número: ");
         int numero_2 = teclat.nextInt();
-        
-        System.out.println("[1] Suma");
-        System.out.println("[2] Resta");
-        System.out.println("[3] Multiplicació");
-        System.out.println("[4] Divisió");
-        System.out.println("Selecciona una opció.");
-        int opcio = teclat.nextInt();
 
-        switch (opcio) {
-            case 1:
-                try{
-                    int suma = numero_1 + numero_2;
-                    System.out.println("Suma = " + suma);
-                }
-                catch(InputMismatchException e){
-                    System.out.println("ERROR número enter invàlid.");
-                }
-                break;
-            case 2: 
-                try {
-                    int resta = numero_1 - numero_2;
-                    System.out.println("Resta = " + resta);
-                } catch (InputMismatchException e) {
-                    System.out.println("ERROR número enter no vàlid.");
-                }
-                break;
-            case 3:
-                try{
-                    int multiplicació = numero_1*numero_2;
-                    System.out.println("Multiplicació = "+multiplicació);
-                }
-                catch(InputMismatchException e){
-                    System.out.println("ERROR número enter no vàlid.");
-                }
-                break;
-            case 4:
-                try {
-                    int divisió = numero_1/numero_2;
-                    System.out.println("Divisió = "+divisió);
-                } catch (InputMismatchException e) {
-                    System.out.println("ERROR número enter no vàlid");
-                }
-                break;
-            default:
-                System.out.println("ERROR número imprevist");;
+        int resultat;
+        resultat = numero_1+numero_2;
+        System.out.println(numero_1 +" + " +numero_2 +" = "+ resultat);
+        resultat = numero_1 - numero_2;
+        System.out.println(numero_1 +" - " +numero_2 +" = "+ resultat);
+        resultat = numero_1 * numero_2;
+        System.out.println(numero_1 +" X " +numero_2 +" = "+ resultat);
+        if(numero_2!=0)
+        {
+            resultat = numero_1/numero_2;
+            System.out.println(numero_1 +" / " +numero_2 +" = "+ resultat);
         }
+    }
+    catch(ArithmeticException e){
+        System.out.println("ERROR en executar operació");
+    }
+    catch (InputMismatchException e)
+    {
+        System.out.println("ERROR en entrar dades");
+    }
     }
 }
