@@ -11,33 +11,34 @@ public class PedraPaperTisora {
         Scanner teclat = new Scanner(System.in);
         int opcioOrdinador = pedra_paper_tissora.nextInt(3);
 
-        System.out.println("Tria una opció: 0 (Pedra), 1 (Paper) o 2 (Tisora)");
+        System.out.println("Tria una opció: Pedra, Paper o Tisora");
         System.out.print("La teva opció: ");
-        int opcioUsuari = teclat.nextInt();
+        String opcioUsuari = teclat.nextLine();
+        int Opcio_Usuari = -1;
 
-        if (opcioOrdinador == 0) 
-        {
+        if (opcioUsuari.equalsIgnoreCase("pedra")) {
+            Opcio_Usuari = 0;
+        } else if (opcioUsuari.equalsIgnoreCase("paper")) {
+            Opcio_Usuari = 1;
+        } else if (opcioUsuari.equalsIgnoreCase("tisora")) {
+            Opcio_Usuari = 2;
+        }
+
+        if (opcioOrdinador == 0) {
             System.out.println("L'ordinador ha tret: Pedra");
-        } 
-        else if (opcioOrdinador == 1) 
-        {
+        } else if (opcioOrdinador == 1) {
             System.out.println("L'ordinador ha tret: Paper");
-        } 
-        else 
-        {
+        } else {
             System.out.println("L'ordinador ha tret: Tisora");
         }
 
-
-        if (opcioUsuari == opcioOrdinador) {
+        if (Opcio_Usuari == opcioOrdinador) {
             System.out.println("Empat!");
-        } 
-        else if ((opcioUsuari == 0 && opcioOrdinador == 2) || (opcioUsuari == 1 && opcioOrdinador == 0) || (opcioUsuari == 2 && opcioOrdinador == 1)) 
-        { 
+        } else if ((Opcio_Usuari == 0 && opcioOrdinador == 2) || 
+                   (Opcio_Usuari == 1 && opcioOrdinador == 0) || 
+                   (Opcio_Usuari == 2 && opcioOrdinador == 1)) {
             System.out.println("Has guanyat!");
-        } 
-        else 
-        {
+        } else {
             System.out.println("Has perdut!");
         }
 

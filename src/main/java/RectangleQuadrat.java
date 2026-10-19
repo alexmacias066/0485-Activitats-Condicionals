@@ -17,11 +17,13 @@ public class RectangleQuadrat {
         int perimetre = costat1 * 2 + costat2 * 2;
         int area = costat1 * costat2;
 
+        System.out.println("El perímetre és: "+perimetre+" L'àrea és: "+area);
+
         if (costat1 == costat2) {
-            System.out.println("És un quadrat");
+            System.out.println("És un quadrat.");
         }
         else{
-            System.out.println("El perímetre és: " + perimetre + " L'àrea és: " + area);
+            System.out.println("No és un quadrat.");
         }
     }
 }

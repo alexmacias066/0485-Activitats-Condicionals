@@ -14,7 +14,7 @@ public class CaixerComissio {
         double saldo = teclat.nextDouble();
         
         System.out.println("Introdueix la quantitat a retirar: ");
-        int quantitat = teclat.nextInt();
+        double quantitat = teclat.nextDouble();
 
         System.out.println("Fas servir un caixer propi? (S/N): ");
         char caixerPropi = teclat.next().charAt(0);

@@ -12,7 +12,7 @@ public class DescompteTrams {
         //   Mostra el resultat
         Scanner teclat = new Scanner(System.in);
         System.out.println("Introdueix una quantitat: ");
-        int quantitat = teclat.nextInt();
+        double quantitat = teclat.nextDouble();
 
         if(quantitat < 500)
         {

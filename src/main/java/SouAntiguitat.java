@@ -28,6 +28,7 @@ public class SouAntiguitat {
         if (sou >= 500)
         {
             System.out.println("Malauradament no rebs ningun augment.");
+            System.out.println("El teu sou final és: "+sou);
         }
     }
 }

@@ -15,7 +15,7 @@ public class DivisioGranPetit {
         int nuemro1 = teclat.nextInt();
         int numero2 = teclat.nextInt();
        
-        int gran, petit;
+        double gran, petit;
 
         if(nuemro1 == numero2)
         {
@@ -34,7 +34,7 @@ public class DivisioGranPetit {
             }
             if(petit != 0)
             {
-                int resultat = gran/petit;
+                double resultat = gran/petit;
                 System.out.println("El resultat és: "+ resultat);
             }
             else

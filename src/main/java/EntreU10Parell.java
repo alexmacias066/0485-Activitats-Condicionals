@@ -10,7 +10,7 @@ public class EntreU10Parell {
         System.out.println("Introdueix un número: ");
         int numero = teclat.nextInt();
 
-        if(numero <= 10)
+        if(numero >= 1 && numero <= 10)
         {
             System.out.println("El número està entre l'1 i el 10.");
             if(numero %2 == 0)

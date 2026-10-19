@@ -17,5 +17,17 @@ public class VaquesPorcs {
         int total = vaques + porcs;
         System.out.println("El percentatge de vaques és: " + vaques*100/total + "%");
         System.out.println("El percentatge de porcs és: " + porcs*100/total + "%");
+
+        if(vaques > porcs)
+        {
+            System.out.println("El percentatge de vaques és més gran.");
+        }
+        else if(porcs > vaques)
+        {
+            System.out.println("El percentatge de porcs és més gran.");
+        }
+        else{
+            System.out.println("Empat! Hi ha el mateix percentatge.");
+        }
     }
 }

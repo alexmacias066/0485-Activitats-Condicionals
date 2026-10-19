@@ -11,23 +11,27 @@ public class QualificacioNota {
         System.out.println("Introdueix la teva nota: ");
         double nota = teclat.nextDouble();
 
-        if(nota < 5)
+        if(nota < 0 || nota > 10)
+        {
+            System.out.println("Nota no vàlida, ha de ser un número entre 0 i 10.");
+        }
+        else if(nota < 5)
         {
             System.out.println("Insuficient");
         }
-        else if(5 <= nota && nota <= 5.9)
+        else if(nota < 6)
         {
             System.out.println("Suficient");
         }
-        else if(6 <= nota && nota <= 6.9)
+        else if(nota < 7)
         {
             System.out.println("Bé");
         }
-        else if(7 <= nota && nota <= 8.9)
+        else if(nota < 9)
         {
             System.out.println("Notable");
         }
-        else if(9 <= nota && nota <= 10)
+        else
         {
             System.out.println("Excel·lent");
         }
